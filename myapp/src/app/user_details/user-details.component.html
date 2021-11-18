@@ -1,0 +1,28 @@
+<!-- <h3> User Details</h3> -->
+
+
+
+ <h3>User List</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th> First Name</th>
+      <th> Last Name </th>
+      <th> Email Id </th>
+      <th> Phone No.</th>
+      <th> Actions </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let user of users">
+      <td>{{ user.first_name }}</td>
+      <td>{{ user.last_name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone }}</td>
+
+      <td>
+        <button (click) = "userDetails(user.id)" class="btn btn-success" style="margin-left: 20px"> View</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

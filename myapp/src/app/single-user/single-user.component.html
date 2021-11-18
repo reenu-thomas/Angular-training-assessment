@@ -1,0 +1,35 @@
+
+<h3> User Details</h3>
+
+<div *ngFor = "let u of user">
+
+  <div style="margin-top: 50px;" >
+    <label> <b> First Name: </b></label> {{u.first_name}}
+  </div>
+  <br>
+  <div>
+    <label> <b> Last Name: </b></label> {{u.last_name}}
+  </div>
+  <br>
+  <div>
+    <label> <b> Email Id: </b></label> {{u.email}}
+  </div>
+  <br>
+  <div>
+    <label> <b> Phone Number: </b></label> {{u.phone}}
+  </div>
+  <br>
+  <div>
+    <label> <b> Organization: </b></label> {{u.organization}}
+  </div>
+  <br>
+  <div>
+    <label> <b> Designation: </b></label> {{u.designation}}
+  </div>
+  <br>
+  <div>
+    <label> <b> Salary: </b></label> {{u.salary | currency:'INR':'symbol':'.2'}}
+  </div>
+  <br><br><br>
+</div>
+

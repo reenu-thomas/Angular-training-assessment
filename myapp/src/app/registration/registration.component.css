@@ -1,0 +1,28 @@
+input.ng-invalid {
+  border-left: 5px solid red;
+}
+
+input.ng-valid {
+  border-left: 5px solid green;
+}
+
+label {
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+button {
+  margin-top: 40px;
+  width: 200px;
+}
+
+.error {
+  color: red;
+  font-size: 17px;
+  margin-top: 1px;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 30px;
+}
