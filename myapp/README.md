@@ -7,8 +7,8 @@ _______________________________
  - User List Page -> from where we can see more information about each user (implemented by using GET request inputing a particular id).
 
 One has to login for user registration :
--username - admin
--password - 12345 
+- Username - admin
+- Password - 12345 
 (Use the above username and password to login)
 
 After logging in users can be registered using the POST request. Once the user is registered, the page gets redirected to the User details View page and all the user details can be viewed there (This is implemented using the GET request). 
