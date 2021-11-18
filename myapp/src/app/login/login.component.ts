@@ -22,12 +22,14 @@ export class LoginComponent implements OnInit {
     this.form = new FormGroup({
       username: new FormControl(null, {
         validators:[
-          Validators.required
+          Validators.required,
+          Validators.minLength(3)
         ]
       }),
       password: new FormControl(null, {
         validators:[
-          Validators.required
+          Validators.required,
+          Validators.minLength(3)
         ]
       })
 
