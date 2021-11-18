@@ -24,3 +24,6 @@ The API folder consists of the node backend used for connecting the frontend to 
 # Use npm start to run the node application.
 
 # Use ng test to do unit testing.
+
+# Screenshots of the application
+__________________________________
