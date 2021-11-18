@@ -18,3 +18,7 @@ Routing has also been implemented to redirect the user to each page.
 Unit testing has been implemented for the GET and POST request in the user.service.spec.ts file.
 
 The API folder consists of the node backend used for connecting the frontend to the database and implementing the GET and POST requests.
+
+# Use ng serve to run the angular application in myapp folder.
+
+# Use npm start to run the node application.
