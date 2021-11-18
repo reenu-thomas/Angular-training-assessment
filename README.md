@@ -22,3 +22,5 @@ The API folder consists of the node backend used for connecting the frontend to 
 # Use ng serve to run the angular application in myapp folder.
 
 # Use npm start to run the node application.
+
+# Use ng test to do unit testing.
