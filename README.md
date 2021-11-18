@@ -11,7 +11,7 @@ One has to login for user registration :
 - Password - 12345 
 (Use the above username and password to login)
 
-After logging in users can be registered using the POST request. Once the user is registered, the page gets redirected to the User details View page and all the user details can be viewed there (This is implemented using the GET request). 
+After logging in users can be registered using the POST request. Once the user is registered, the page gets redirected to the User details View page and all the user details can be viewed there (This is implemented using the GET request). Validation for the input fields is also implemented in the Login and Registration page.
 
 Routing has also been implemented to redirect the user to each page.
 
