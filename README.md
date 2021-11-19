@@ -1,5 +1,4 @@
 # Angular Training Assessment
-_______________________________
 
  This applications consists of a backend (API folder) and frontend (myapp) folder. The frontend folder is the angular application which is used for implementing the 
  - Home Page
