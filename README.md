@@ -18,11 +18,13 @@ Unit testing has been implemented for the GET and POST request in the user.servi
 
 The API folder consists of the node backend used for connecting the frontend to the database and implementing the GET and POST requests.
 
-# Use ng serve to run the angular application in myapp folder.
+# Use 'ng serve' to run the angular application in myapp folder.
+While uploading on github, the **node_modules folder is ignored** as it is very big so on cloning add the node modules folder to the project to make it run. To do it, just **delete the package-lock.json file** and **run "npm install"** to add the node_modules folder.
 
-# Use npm start to run the node application.
+# Use 'npm start' to run the node application.
+While uploading on github, the **node_modules folder is ignored** as it is very big so on cloning add the node modules folder to the project to make it run. To do it, just **delete the package-lock.json file** and **run "npm install"** to add the node_modules folder.
 
-# Use ng test to do unit testing.
+# Use 'ng test' to do unit testing.
 
 # Screenshots of the application
 
