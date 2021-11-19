@@ -26,30 +26,23 @@ The API folder consists of the node backend used for connecting the frontend to 
 # Use ng test to do unit testing.
 
 # Screenshots of the application
-__________________________________
 
 # Home Page
-____________
 ![Home page](https://user-images.githubusercontent.com/90870014/142449410-94a0f764-c2ce-443a-bc49-3c5d8795d5bf.jpeg)
 
 # Login Page
-_____________
 ![Login page](https://user-images.githubusercontent.com/90870014/142449466-48f91287-bce9-425b-b01d-8e3dc75e88c8.jpeg)
 
 # Registration Page
-_____________________
 ![Registration page](https://user-images.githubusercontent.com/90870014/142449612-a13a19fa-bdb3-4584-b9aa-6e3feaefaf63.jpeg)
 
 # User List Page
-_________________
 ![User list page](https://user-images.githubusercontent.com/90870014/142449701-ee0ed34a-21af-4d8c-82b7-264115bff09c.jpeg)
 
 # User Details Page
-____________________
 ![User details page](https://user-images.githubusercontent.com/90870014/142449775-7cd1f0df-990d-4c07-bc4f-a9f4d57035c6.jpeg)
 
 # Testing
-_________
 ![Testing](https://user-images.githubusercontent.com/90870014/142579207-89732d31-41ce-4753-bee3-c8598871c925.JPG)
 
 
