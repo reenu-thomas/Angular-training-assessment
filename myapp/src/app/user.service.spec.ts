@@ -130,6 +130,7 @@ describe('#Testing GET method #getAll() for getting all users', () => {
     });
   });
 
+
 //For Get request using corresponding ID
  describe('#Testing GET method getUserById(id) for geting user with a particular id', () => {
   it('Should get the correct first name of user', () => {
