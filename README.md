@@ -3,8 +3,7 @@ _______________________________
 
  This applications consists of a backend (API folder) and frontend (myapp) folder. The frontend folder is the angular application which is used for implementing the 
  - Home Page
- - Login Page -> which leads into the User Registration Page. 
- - Registration Page
+ - Login Page -> which leads into the User Registration Page.
  - User List Page -> from where we can see more information about each user (implemented by using GET request inputing a particular id).
 
 One has to login for user registration :
@@ -48,4 +47,3 @@ _________________
 # User Details Page
 ____________________
 ![User details page](https://user-images.githubusercontent.com/90870014/142449775-7cd1f0df-990d-4c07-bc4f-a9f4d57035c6.jpeg)
-

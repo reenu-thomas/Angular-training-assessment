@@ -26,31 +26,10 @@ describe('UserService', () => {
     expect(service).toBeTruthy();
   });
 
-  //For GET request
-  describe('#getAll()', () => {
-   it('getAll() should GET all data', () => {
-
+//For GET request
+describe('#Testing GET method #getAll() for getting all users', () => {
+  it('returned Observable should match the right data', () => {
     const data = [
-      {
-          "id": 7,
-          "first_name": "reenu",
-          "last_name": "thomas",
-          "email": "roycereenu@yahoo.com",
-          "phone": "98897634",
-          "organization": "abs",
-          "designation": "manager",
-          "salary": 50000
-      },
-      {
-          "id": 8,
-          "first_name": "royce",
-          "last_name": "thomas",
-          "email": "royce@yahoo.co",
-          "phone": "342342355",
-          "organization": "gadgeon",
-          "designation": "CEO",
-          "salary": 75000
-      },
       {
           "id": 9,
           "first_name": "Jisna",
@@ -60,16 +39,6 @@ describe('UserService', () => {
           "organization": "ksd",
           "designation": "sakoas",
           "salary": 234324
-      },
-      {
-          "id": 10,
-          "first_name": "sreerag",
-          "last_name": "ts",
-          "email": "sreerag.ts@gmail.com",
-          "phone": "983091280912",
-          "organization": "Bosch",
-          "designation": "R AND D engineer",
-          "salary": 50000
       },
       {
           "id": 11,
@@ -82,16 +51,6 @@ describe('UserService', () => {
           "salary": 22999
       },
       {
-          "id": 12,
-          "first_name": "test",
-          "last_name": "user",
-          "email": "testuser@eim.ae",
-          "phone": "9399122121",
-          "organization": "mnkjk",
-          "designation": "jknkj",
-          "salary": 222222
-      },
-      {
           "id": 13,
           "first_name": "Biju",
           "last_name": "Thomas",
@@ -100,16 +59,6 @@ describe('UserService', () => {
           "organization": "Globis Medical",
           "designation": "CEO",
           "salary": 100000
-      },
-      {
-          "id": 14,
-          "first_name": "Biju",
-          "last_name": "Thomas",
-          "email": "roycereenu1@gmail.com",
-          "phone": "0505913253",
-          "organization": "Globis Medical",
-          "designation": "CEO",
-          "salary": 1000000
       },
       {
           "id": 15,
@@ -122,34 +71,43 @@ describe('UserService', () => {
           "salary": 299999
       },
       {
-          "id": 16,
-          "first_name": "Sunila",
-          "last_name": "Thomas",
-          "email": "sunilamoh@gmail.com",
-          "phone": "0509203354",
-          "organization": "Ministry of Health",
-          "designation": "Technician",
-          "salary": 180000
+          "id": 18,
+          "first_name": "Test",
+          "last_name": "User",
+          "email": "ts@eim.ae",
+          "phone": "9786537786",
+          "organization": "xyz",
+          "designation": "accountant",
+          "salary": 80000
       }
   ];
 
-    service.getAll().subscribe((res) => {
-      expect(res).toEqual(data);
-    });
+    service.getAll()
+      .subscribe(user => {
+        expect(user[0].first_name).toEqual('Jisna');
+        expect(user[0].last_name).toEqual('Jose');
+        expect(user[0].salary).toEqual(234324);
 
-    const req = httpMock.expectOne('http://localhost:5000/api/v1/employees/');
-    expect(req.request.method).toEqual("GET");
+        expect(user[1].first_name).toEqual('Reenu Biju');
+        expect(user[1].last_name).toEqual('Thomas');
+        expect(user[1].organization).toEqual('Gadgeon');
+      });
+
+    const req = httpMock.expectOne(
+      'http://localhost:5000/api/v1/employees/'
+    );
+
     req.flush(data);
 
     httpMock.verify();
   });
-
 });
 
   //For POST request
-  describe('#create()', () => {
+  describe('#Testing POST Method #create() for creating user', () => {
     it('returned Observable should match the right data', () => {
       const data =    {
+        "id": 18,
         "first_name": "Surendran",
         "last_name": "Rajeev",
         "email": "leemolee@hotmail.com",
@@ -159,7 +117,7 @@ describe('UserService', () => {
         "salary": 18000
       };
 
-      service.create({ id: 17 })
+      service.create({ id: 18 })
         .subscribe(user => {
           expect(user.first_name).toEqual('Surendran');
         });
@@ -173,17 +131,17 @@ describe('UserService', () => {
   });
 
 //For Get request using corresponding ID
- describe('#getUserById(id)', () => {
-  it('Sould get the correct name of user', () => {
+ describe('#Testing GET method getUserById(id) for geting user with a particular id', () => {
+  it('Should get the correct first name of user', () => {
     service.getUserById(11).subscribe((data: any) => {
-      expect(data.name).toBe('Reenu Biju');
+      expect(data.first_name).toBe('Reenu Biju');
     });
 
     const req = httpMock.expectOne(`http://localhost:5000/api/v1/employees/11`);
     expect(req.request.method).toBe('GET');
 
     req.flush({
-      name: 'Reenu Biju'
+      first_name: 'Reenu Biju'
     });
 
     httpMock.verify();
